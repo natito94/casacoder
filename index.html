@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Inicio</title>
+  <link rel="shortcut icon" href="img/icono.webp" type="image/x-icon">
+  <!-- MI CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="fondodocumento">
+  <!-- BARRA DE NAVEGACION -->
+  <header>
+    <nav class="navbar navbar-expand-lg barranav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">StayFit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="html/bienestar.html">Bienestar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/sucursales.html">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contactos.html">Contato</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CARRUSEL DE IMAGENES -->
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carrusel/cicacorriendo.jpg" class="d-block w-100 imgcarousel img-fluid" alt="chica corriendo">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrusel/chicaabdominales.jpg" class="d-block w-100 imgcarousel img-fluid"
+            alt="chica haciendo sentadillas">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrusel/proteina.jpg" class="d-block w-100 imgcarousel img-fluid" alt="chica tomando proteina">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- PRESENTACION -->
+  </section>
+  <main>
+    <h1>Bienvenidos a StayFit</h1>
+    <h2>¿Quienes somos?</h2>
+    <p> Somos un foro destinado a ayudarte a conseguir todo para lograr tus objetivos. Sabemos que a veces nos
+      proponemos objetivos a corto plazo que se nos hacen inalcanzables o que se nos hace dificil seguir los pasos para
+      lograrlo. Por eso queremos ayudarte a que tengas todo lo necesario al alcance de un simple "click". En nuestra
+      pagina vas a poder encontrar tutoriales, recetas fit que van a ayudarte a seguir el paso de tus objetivos sin
+      querer consumir comidas que te alejen de ellos, tambien encontraras clases de yoga y de home training, como asi
+      tambien la mejor indumentaria para realizar el deporte que mas te guste</p>
+  </main>
+  <section class="ingreso mb-5">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Ingresar a mi cuenta
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar a mi cuenta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="emailHelp" class="form-text">Nunca compartas tu contraseña.</div>
+            </div>
+            <div class="mb-3 form-check">
+            </div>
+            <!-- BOTON DE INGRESO -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success">Entrar</button>
+            <button type="button" class="btn btn-outline-success">Suscribirse</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <h3> Encontranos tambien en:</h3>
+    <ul>
+      <li class="redsocial"><a class="redes" href="http://instagram.com" target="_blank">Instagram</a></li>
+
+      <li class="redsocial"><a class="redes" href="http://www.facebook.com" target="_blank">Facebook</a></li>
+
+      <li class="redsocial"><a class="redes" href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+    </ul>
+    <h3>Todos los derechos reservados</h6>
+  </footer>
+  <!-- SCRIPT BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

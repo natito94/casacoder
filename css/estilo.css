@@ -1,0 +1,100 @@
+/* HOME */
+.fondodocumento {
+    background-color: #BBD2C5;
+}
+
+.barranav {
+    background-color: #BBD2C5;
+}
+
+.imgcarousel {
+    width: 900px;
+    height: 600px;
+}
+
+/* FOOTER */
+a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #536976;
+    color: black;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.redsocial {
+    list-style-type: none;
+
+}
+
+
+/* SECCION DE UBICACION */
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sucursal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SECCION DE CONTACTO */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    ;
+    align-items: center;
+    background-color: transparent;
+    color: #BBD2C5;
+    justify-content: center;
+}
+
+.bodycontacto {
+    background-image: url(../img/fondocontacto/Roads_Fitness_Run_Back_view_Brunette_girl_578820_1280x720\ \(1\).jpg);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fondoinput {
+    background-color: transparent;
+}
+
+/* SECCION DE BIENESTAR */
+.bodybienestar {
+    background-image: url(../img/carrusel/fondobienestar.jpg)
+}
+
+.foro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECCION TIENDA */
+.imagentienda {
+    transition: all 0.3s ease;
+}
+
+.imagentienda:hover {
+    transform: scale(1.07);
+}
+/* MEDIA QUERRIS */
