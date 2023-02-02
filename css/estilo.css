@@ -8,8 +8,11 @@
 }
 
 .imgcarousel {
-    width: 900px;
-    height: 600px;
+    width: 90vw;
+    height: 83vh;
+}
+.imginicio {
+    display: none;   
 }
 
 /* FOOTER */
@@ -97,4 +100,34 @@ h3 {
 .imagentienda:hover {
     transform: scale(1.07);
 }
+
 /* MEDIA QUERRIS */
+
+@media(min-width: 400px){
+    .carrusel {
+        display: none;
+    }
+    .imginicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    .tienda {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+@media(min-width: 768){
+    .tienda{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
