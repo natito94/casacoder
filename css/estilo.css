@@ -103,7 +103,7 @@ h3 {
 
 /* MEDIA QUERRIS */
 
-@media(min-width: 400px){
+@media(max-width: 400px){
     .carrusel {
         display: none;
     }
@@ -121,7 +121,7 @@ h3 {
         align-items: center;
     }
 
-@media(min-width: 768){
+@media(max-width: 768){
     .tienda{
         margin: auto;
         display: flex;
