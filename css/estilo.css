@@ -1,18 +1,36 @@
 /* HOME */
 .fondodocumento {
-    background-color: #BBD2C5;
+    background-image: url(../img/carrusel/fondobienestar.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(100vh);
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .barranav {
-    background-color: #BBD2C5;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.barranav :hover {
+    color: rgb(9, 225, 52);
 }
 
 .imgcarousel {
-    width: 90vw;
-    height: 83vh;
+    width: 80vw;
+    height: 90vh;
 }
+
 .imginicio {
-    display: none;   
+    display: none;
+}
+
+.ingreso-b {
+    display: none;
 }
 
 /* FOOTER */
@@ -24,7 +42,7 @@ a {
 
 footer {
     text-align: center;
-    border-top: 1px solid #536976;
+    border-top: 1px solid #04d643;
     color: black;
 }
 
@@ -34,6 +52,11 @@ p {
 
 h3 {
     font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    opacity: 0.5;
 }
 
 .redsocial {
@@ -61,28 +84,32 @@ h3 {
 .formulario {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    ;
     align-items: center;
-    background-color: transparent;
-    color: #BBD2C5;
     justify-content: center;
-}
-
-.bodycontacto {
-    background-image: url(../img/fondocontacto/Roads_Fitness_Run_Back_view_Brunette_girl_578820_1280x720\ \(1\).jpg);
-    display: flex;
-    flex-direction: column;
-
+    width: 30vw;
+    max-width: 400px;
+    background-color: rgba(213, 245, 227, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 100%);
+    color: black;
+    margin: auto;
 }
 
 .fondoinput {
     background-color: transparent;
 }
 
+.contacto-b {
+    display: none;
+}
+
 /* SECCION DE BIENESTAR */
 .bodybienestar {
-    background-image: url(../img/carrusel/fondobienestar.jpg)
+    background-image: url(../img/carrusel/fondobienestar.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 .foro {
@@ -95,39 +122,123 @@ h3 {
 /* SECCION TIENDA */
 .imagentienda {
     transition: all 0.3s ease;
+    width: 50vh;
 }
 
 .imagentienda:hover {
     transform: scale(1.07);
 }
 
+/* BOTONES */
+.botones {
+    color: rgb(9, 225, 52);
+    border: rgb(9, 225, 52);
+}
+
+.botones :hover {
+    background-color: rgb(79, 247, 112);
+    color: black;
+
+}
+
 /* MEDIA QUERRIS */
 
-@media(max-width: 400px){
+@media(max-width: 400px) {
     .carrusel {
         display: none;
     }
+
     .imginicio {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+    .ingreso-b {
+        background-color: rgba(213, 245, 227, 0.5);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
     .tienda {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin: 0;
         align-items: center;
     }
 
-@media(max-width: 768){
-    .tienda{
-        margin: auto;
+    .ingresar {
+        display: none;
+    }
+
+    .contacto-b {
+        background-color: rgba(213, 245, 227, 0.5);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactanos {
+        display: none;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .tienda {
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
     }
+
+    .ingreso-b {
+        background-color: rgba(213, 245, 227, 0.5);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingresar {
+        display: none;
+    }
+
+    .contacto-b {
+        background-color: rgba(213, 245, 227, 0.5);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactanos {
+        display: none;
+    }
+
+    .botones {
+        width: 30vw;
+        color: black;
+        margin: auto;
+    }
+
+    .botones :hover {
+        background-color: rgba(79, 247, 112, 0.2);
+    }
+
+    .foro {
+        width: 50vh;
+        margin: auto;
+    }
+
 }
