@@ -1,6 +1,6 @@
 /* HOME */
 .fondodocumento {
-    background-image: url(../img/fondo1.jpeg);
+    background-image: url(../img/carrusel/fondodoncumento.jpg);
     height: calc(100vh);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,21 +9,21 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
 }
 
 .barranav {
     color: black;
     font-size: 1.2rem;
-    justify-content: space-evenly;
 }
 
 .barranav :hover {
     color: rgb(9, 225, 52);
 }
-
-.imgcarousel {
-    width: 80vw;
-    height: 90vh;
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imginicio {
@@ -48,9 +48,14 @@ footer {
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
-
+h1{
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
 h3 {
     font-size: 1rem;
 }
@@ -63,6 +68,10 @@ h4 {
 .redsocial {
     list-style-type: none;
 
+}
+
+.redsocial svg {
+    color: #04d643;
 }
 
 
@@ -89,10 +98,11 @@ h4 {
     justify-content: center;
     width: 30vw;
     max-width: 400px;
-    background-color: rgba(122, 102, 120, 0.2);
+    /* background-color: rgba(1, 58, 84, 0.5); */
+    background: linear-gradient(#000428, #19547b, #19547b, #19547b, #2c3e50);
     border-radius: 7px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 100%);
-    color: black;
+    color: white;
     margin: auto;
 }
 
@@ -105,29 +115,23 @@ h4 {
 }
 
 /* SECCION DE BIENESTAR */
-.bodybienestar {
-    background-image: url(../img/carrusel/fondobienestar.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
 
 .foro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 /* SECCION TIENDA */
 .imagentienda {
     transition: all 0.3s ease;
     width: 50vh;
+    border-radius: 5px;
 }
 
 .imagentienda:hover {
     transform: scale(1.07);
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 100%);
 }
 
 /* BOTONES */
@@ -135,22 +139,47 @@ h4 {
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    color: #ec008c;
+    color: #3fada8;
     background-color: black;
     border-radius: 4px;
     align-items: center;
     width: 12vw;
+    transition: all 0.3s;
 }
 
 .botones :hover {
-    background-color: #ec008c;
-    color: black;
+    background-color: transparent;
+    color: #3fada8;
+    border: black 2px;
+    transform: scale(1.05);
+}
 
+.botonesform {
+    background-color: #000428;
+    border: #04d643 solid 1px;
+    color: white;
+    transform: all 0.3s ease;
+}
+
+.boton {
+    color: #3fada8;
+    background-color: black
+}
+
+.login {
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    color: #3fada8;
+    background-color: black;
+    border-radius: 4px;
+    align-items: center;
+    width: 20vw;
 }
 
 /* MEDIA QUERRIS */
 
-@media(max-width: 400px) {
+@media(min-width:340px) and (max-width: 768px) {
     .carrusel {
         display: none;
     }
@@ -163,7 +192,7 @@ h4 {
     }
 
     .ingreso-b {
-        background-color: rgba(252, 57, 193, 0.5);
+        background-color: rgba(1, 58, 84, 0.7);
         color: black;
         display: flex;
         flex-direction: column;
@@ -182,8 +211,12 @@ h4 {
         display: none;
     }
 
+    .contactanos {
+        display: none;
+    }
+
     .contacto-b {
-        background-color: rgba(213, 245, 227, 0.5);
+        background-color: rgba(1, 58, 84, 0.7);
         color: black;
         display: flex;
         flex-direction: column;
@@ -191,13 +224,14 @@ h4 {
         justify-content: center;
     }
 
-    .contactanos {
-        display: none;
+    .botones {
+        width: 30vh;
+        margin: auto;
     }
 }
 
 
-@media(max-width: 768px) {
+@media(min-width: 768px) and (max-width: 1023px) {
     .tienda {
         margin: 0;
         display: flex;
@@ -208,40 +242,19 @@ h4 {
     }
 
     .ingreso-b {
-        background-color: rgba(213, 245, 227, 0.5);
+        background-color: rgba(1, 58, 84, 0.7);
         color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .ingresar {
-        display: none;
-    }
-
-    .contacto-b {
-        background-color: rgba(213, 245, 227, 0.5);
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contactanos {
-        display: none;
     }
 
     .botones {
         width: 30vw;
-        color:#ec008c ;
+        color: #3fada8;
         margin: auto;
     }
 
-    .foro {
-        width: 50vh;
-        margin: auto;
-    }
 
 }
